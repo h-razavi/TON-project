@@ -329,11 +329,25 @@ button {
     text-align: center;
     display: flex;
     justify-content: space-between;
+    max-height: 1030px;
 }
 .table-col {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
+    width: 25%;
     font-size: 20px;
     line-height: 30px;
+}
+.table-col:first-child {
+  text-align: left;
+}
+.table-col:nth-child(2){
+  background-color: var(--background_light_main);
+  border-radius: 24px;
+}
+
+.free-cell {
+  height: 93px;
+  margin-bottom: 93px;
 }
