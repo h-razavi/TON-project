@@ -150,15 +150,89 @@
         <img src="icons/learn-more.svg"> <div>Learn More</div>
       </button>
     </div>
-    <table class="analysis-table">
+    <!-- <table class="analysis-table container">
       <thead>
         <tr>
-          <th><img src="./logos/logo.svg">TON </th>
-          <th><img src="./logos/ether.svg">Ethereum 2.0 </th>
-          <th><img src="./logos/solana.svg">Solana </th>
+          <th></th>
+          <th class="sec-col"><img src="./logos/logo.svg"><br>TON </th>
+          <th><img src="./logos/ether.svg"><br>Ethereum 2.0 </th>
+          <th><img src="./logos/solana.svg"><br>Solana </th>
         </tr>
       </thead>
-    </table>
+      <tbody>
+        <tr>
+          <td>Block Time</td>
+          <td class="sec-col">5 sec.</td>
+          <td>12 sec.</td>
+          <td>1 sec.</td> 
+        </tr>
+        <tr>
+          <td>Time-to-finality</td>
+          <td class="sec-col">Under 1 sec.</td>
+          <td><a href="#"></a>10-15 min.<img src="./icons/external-link.svg"></a></td>
+          <td>6.4 sec.</td> 
+        </tr>
+        <tr>
+          <td>Simple transaction  performance</td>
+          <td class="sec-col">High</td>
+          <td>Potentially high</td>
+          <td>High</td>
+        <tr>
+          <td>Complex transaction  performance</td>
+          <td class="sec-col">High</td>
+          <td>Low</td>
+          <td><a href="#">Very low</a><img src="./icons/external-link.svg"></td> 
+        </tr>
+        <tr>
+          <td>Sharding support</td>
+          <td class="sec-col">Max. 2<sup>60</sup> shards per workchain</td>
+          <td>Max. 2<sup>6</sup> shards</td>
+          <td>None</td> 
+        </tr>
+        <tr>
+          <td>Cross-shard communication</td>
+          <td class="sec-col">Near-instant</td>
+          <td>Slow time-to-finality</td>
+          <td>None</td> 
+        </tr>
+ 
+        </tr>
+      </tbody>
+    </table> -->
+    <div class="analysis-table container">
+      <div class="table-col">
+        <h3>Block Time</h3>
+        <h3>Time-to-finality</h3>
+        <h3>Simple transaction  performance</h3>
+        <h3>Complex transaction  performance</h3>
+        <h3>Sharding support</h3>
+        <h3>Cross-shard communication</h3>
+      </div>
+      <div class="table-col">
+        <span>5 sec.</span>
+        <span>Under 1 sec.</span>
+        <span>High</span>
+        <span>High</span>
+        <span>Max. 2<sup>60</sup> shards per workchain</span>
+        <span>Near-instant</span>
+      </div>
+      <div class="table-col">
+        <span>12 sec.</span>
+        <span><a href="#"></a>10-15 min.<img src="./icons/external-link.svg"></a></span>
+        <span>Potentially high</span>
+        <span>Low</span>
+        <span>Max. 2<sup>6</sup> shards</span>
+        <span>Slow time-to-finality</span>
+      </div>
+      <div class="table-col">
+        <span>1 sec.</span>
+        <span>6.4 sec.</span>
+        <span>High</span>
+        <span><a href="#">Very low</a><img src="./icons/external-link.svg"></span>
+        <span>None</span>
+        <span>None</span>
+      </div>
+    </div>
 
     </section>
   </body>
