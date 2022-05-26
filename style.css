@@ -156,6 +156,7 @@ button {
 .welcome-gradient {
   background-image: var(--text_dark_gradient);
   background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .welcome-text p {
@@ -292,9 +293,10 @@ button {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  border-top: 3px solid #e5f3fa;
   margin-top: 64px;
+  overflow: visible;
 }
+
 .timeline-col p {
   display: inline-block;
   width: 360px;
@@ -304,13 +306,36 @@ button {
   font-size: 24px;
   font-weight: 800;
   margin: 0;
-  padding-top: 18px;
 }
-.dot {
-  color: var(--button_light_primary);
-  position: relative;
-  top: -13px;
+
+.timeline-col h3::before {
   display: block;
+  content: '';
+  border-top: 2px solid #e5f3fa;
+  margin-bottom: 24px;
+}
+
+.timeline-col::before {
+  display: block;
+  content: '';
+  background-color: #08c; 
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  transform: translateY(50%);
+}
+.big-dot::before {
+  display: block;
+  content: '';
+  background-color: #fff; 
+  outline: 8px solid #08c;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  transform: translateY(50%);
+}
+.big-dot h3::before {
+  border-top: 2px dashed #e5f3fa;
 }
 .table-top {
   text-align: center;
@@ -319,7 +344,8 @@ button {
 .table-top button {
   margin: 30px auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  width: 20%;
 }
 .analysis-table {
   border: 1px solid #dde3e6;
@@ -478,6 +504,7 @@ left: 530px;
 }
 .cta-title {
   text-align: center;
+  padding: 0 50px;
 }
 .cta-text {
   text-align: center;
