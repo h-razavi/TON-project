@@ -324,6 +324,9 @@ button {
   height: 8px;
   transform: translateY(50%);
 }
+.big-dot {
+  overflow: visible;
+}
 .big-dot::before {
   display: block;
   content: '';
@@ -335,8 +338,13 @@ button {
   transform: translateY(50%);
 }
 .big-dot h3::before {
-  border-top: 2px dashed #e5f3fa;
+  content: '';
+  border-top: none;
 }
+.big-dot svg {
+  transform: translate(16px,-50%);
+}
+
 .table-top {
   text-align: center;
   padding: 140px 64px;
@@ -409,8 +417,54 @@ button {
 .topics-buttons {
   display: flex;
   justify-content: center;
-  margin-top: 44px;
+  margin: 44px auto 72px;
 }
+.topics-window-container {
+  width: 1040px;
+  height: 550px;
+  margin: 0 auto;
+  box-shadow: inset;
+}
+.topics-window-top {
+  height: 60px;
+  background-color: #29292e;
+  border-radius: 36px 36px 0 0;
+  display: flex;
+  justify-content: flex-start;
+  padding: 24px 40px;
+}
+.window-button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+.window-close {
+  background-color: #ed6a5e;
+}
+.window-max {
+  background-color: #f6be4f;
+}
+.window-min {
+  background-color: #62c554;
+}
+.topics-window-body {
+  background-color: #323236;
+  height: 490px;
+  border-radius: 0 0 36px 36px;
+  padding: 40px 0 38px;
+}
+.window-topic {
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 700;
+  padding: 10px 16px 10px 40px;
+  margin-bottom: 8px;
+}
+
+
+
+
 .community {
   display: flex;
   justify-content: center;
@@ -504,7 +558,6 @@ left: 530px;
 }
 .cta-title {
   text-align: center;
-  padding: 0 50px;
 }
 .cta-text {
   text-align: center;
