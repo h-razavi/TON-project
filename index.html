@@ -8,14 +8,8 @@
     <link rel="stylesheet" href="./style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Mulish&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Mulish:wght@200;400;500;700;800&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,700&display=swap" rel="stylesheet"> 
     <link rel="icon" type="image/x-icon" href="/logos/logo.svg" />
   </head>
   <body>
@@ -30,7 +24,7 @@
     </div>
     <div class="nav-container">
       <div class="top-nav container">
-        <img class="top-logo" src="/logos/logo-with-name.svg" height="48px" />
+        <img class="top-logo" src="/logos/logo-with-name.svg" height="40px" />
         <nav class="nav-bar">
           <ul>
             <li>Use TON</li>
@@ -138,6 +132,7 @@
             TON becomes The Open Network. TON mainnet is fully live operational,
             hosting ultra-cheap, fast, and ecologically friendly transactions.
           </p>
+          <a href="#">Roadmap <img src="./icons/chevron-right(2).svg"></a>
         </div>
       </div>
     </section>
@@ -215,7 +210,22 @@
             <div class="window-topic">Libraries</div>
             <div class="window-topic">Currencies</div>
           </div>
-          <div class="window-main"></div>
+          <div class="window-main">
+            <h2 class="window-main-title">Actor model</h2>
+            <p class="window-main-text">The <a>actor model</a> is a is a mathematical model of concurrent computation and is at the heart of TON smart contracts. In it, each smart contract can receive one message, change its own state or send one or several messages per unit time. As a result, the entire blockchain, as well as a given contract, can scale up to host an unlimited amount of users and transactions.</p>
+            <div class="windows-main-more"><a>Read more<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+            </svg></a></div>
+            <div class="window-main-bottom">
+              <span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 20 30">
+                <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+              </svg> Previous</span>
+              <span>Next topic<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 20 30">
+                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+              </svg></span>
+            </div>
+
+          </div>
         </div>
       </div>
     </div>
@@ -331,5 +341,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./main.js" type="text/javascript"></script>
   </body>
 </html>
