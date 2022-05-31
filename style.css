@@ -482,7 +482,7 @@ button {
 .window-topic:hover {
   background-color: var(--button_dark_secondary_hover);
 }
-.window-topic:first-child {
+.selected-topic {
   background-color: #38383C;
   border-right: 2px solid var(--button_dark_primary);
 }
@@ -517,6 +517,9 @@ button {
   display: flex;
   align-items: center;
   font-weight: 700;
+}
+.window-shown {
+  display: flex;
 }
 .window-main-bottom{
   display: flex;
